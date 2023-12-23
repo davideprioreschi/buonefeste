@@ -9,15 +9,15 @@
 <body>
     <div class="bodysfondo">
     </div>
+    <audio id="song" src="img/we-wish-you-a-merry-christmas-xmas-background-short-music-30-second-178228.mp3">
+        
+    </audio>
     
 
     <script>
-        function playSound(audioName){
-            let audio=new Audio(audioName);
-            audio.loop=true;
-            audio.play();
-        }
-        playSound("img/we-wish-you-a-merry-christmas-xmas-background-short-music-30-second-178228.mp3");
+        window.addEventListener('click',() => {
+            document.getElementById("song").play();
+        })
     </script>
 </body>
 </html>
