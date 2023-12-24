@@ -16,9 +16,7 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    /* background-attachment: fixed; */
 }
-.treesfondo {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+
+

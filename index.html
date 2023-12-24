@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buone feste</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="bodysfondo">
+    <div class="bodysfondo" id="foto">
     </div>
-    <audio id="song" src="img/we-wish-you-a-merry-christmas-xmas-background-short-music-30-second-178228.mp3">
-        
+    <audio id="song" src="img/canzonenatale.mp3">
+
     </audio>
-    
 
     <script>
-        window.addEventListener('click',() => {
-            document.getElementById("song").play();
-        })
+
+let isPlaying = false;
+const song = document.getElementById("song");
+
+window.addEventListener('click', function () {
+    if (isPlaying) {
+        song.pause();
+        isPlaying = false;
+    } else {
+        song.play();
+        isPlaying = true;
+    }
+});
+
     </script>
 </body>
+
 </html>
